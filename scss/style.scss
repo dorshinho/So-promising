@@ -1,7 +1,6 @@
 @import "../bower_components/normalize-scss/_normalize.scss";
 @import "../bower_components/typeplate-starter-kit/css/_typeplate.scss";
 @import "./mixins.scss";
-
 /**
  * BOX-SIZING
  */
@@ -9,59 +8,42 @@
 *, *:before, *:after {
     box-sizing: border-box;
 }
-
 /**
  * GRIDS
  */
 
-// .grid {
-//     width: 100%;
-//     display: block;
-//     font-size: 0;
-//     text-align: justify;
-//     position: relative;
-
-//     & > * {
-//         font-size: medium;
-//         text-align: left;
-//         display: inline-block;
-//         width: 100%;
-//         vertical-align: top;
-//     }
-
-//     &:after {
-//         display: inline-block;
-//         width: 100%;
-//         content: "";
-//         font-size: medium;
-//     }
-// }
-
-// @include gridify(2, 400);
-// @include gridify(4, 600);
-
+.grid {
+    width: 100%;
+    display: block;
+    font-size: 0;
+    text-align: justify;
+    position: relative;
+    & > * {
+        font-size: medium;
+        text-align: left;
+        display: inline-block;
+        width: 100%;
+        vertical-align: top;
+    }
+    &:after {
+        display: inline-block;
+        width: 100%;
+        content: "";
+        font-size: medium;
+    }
+}
+@include gridify(2, 400);
+@include gridify(4, 600);
 /**
  * GENERAL
  */
-.grid {
-    & > * {
-        display: inline-block;
-    }
+
+img {
+    max-width: 250px;
 }
-
- img {max-width:250px;}
-
 body {
     width: 100%;
     transition: opacity .25s ease;
-}
-.col-1-3 {
-  width: 30%;
-  outline: red solid 1px;
-}
-.col-2-3 {
-  width: 65%;
-  outline: red solid 1px;
 }
 .pic {
     height: 50%;

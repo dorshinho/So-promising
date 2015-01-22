@@ -817,48 +817,26 @@ abbr[title]:hover {
 /**
  * GRIDS
  */
-.grid {
-  width: 100%;
-  display: block;
-  font-size: 0;
-  text-align: justify;
-  position: relative; }
-  .grid > * {
-    font-size: medium;
-    text-align: left;
-    display: inline-block;
-    width: 100%;
-    vertical-align: top; }
-  .grid:after {
-    display: inline-block;
-    width: 100%;
-    content: "";
-    font-size: medium; }
-
-@media only screen and (min-width: 400px) {
-  .grid-2-400 > * {
-    width: 48%; } }
-
-@media only screen and (min-width: 600px) {
-  .grid-4-600 > * {
-    width: 23%; } }
-
 /**
  * GENERAL
  */
+.grid > * {
+  display: inline-block; }
+
 img {
-  max-width: 100; }
+  max-width: 250px; }
 
 body {
+  width: 100%;
   -webkit-transition: opacity .25s ease;
           transition: opacity .25s ease; }
 
 .col-1-3 {
-  width: 33.33%;
+  width: 30%;
   outline: red solid 1px; }
 
 .col-2-3 {
-  width: 66.66%;
+  width: 65%;
   outline: red solid 1px; }
 
 .pic {

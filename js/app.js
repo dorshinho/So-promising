@@ -24,9 +24,10 @@ function app() {
         var githubUsername = "dorshinho";
         var url = "https://api.github.com/users/" + githubUsername + "?access_token=" + token;
         var left_col = document.querySelector(".col-1-3");
+        var right_col = document.querySelector(".col-2-3");
 
         $.get(url).then(drawProfile);
-
+        $.get(url).then(draw);
         function drawProfile(data) {
 
             left_col.innerHTML = [
@@ -35,10 +36,24 @@ function app() {
                 '<h6>', data.company, '</h6>',
                 '<h6>', data.blog, '</h6>',
                 '<h6>', data.location, '</h6>',
-                '<h6>', data.created_at, '</h6>',
+                '<h6>', data.created_at, '</h6>'
 
             ].join('')
         }
+
+        function draw(data) {
+
+            right_col.innerHTML = [
+
+                '<h2>', data.name, '</h2>',
+                '<h6>', data.company, '</h6>',
+                '<h6>', data.blog, '</h6>',
+                '<h6>', data.location, '</h6>',
+                '<h6>', data.created_at, '</h6>'
+
+            ].join('')
+        }
+
 
     })
 

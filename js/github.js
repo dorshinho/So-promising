@@ -13,11 +13,11 @@ GithubClient.prototype.getReposInfo = function() {
 };
 
 GithubClient.prototype.getTemplate1 = function() {
-    return $.get("./templates/1.html")
+    return $.get("./templates/leftside.html")
 };
 
 GithubClient.prototype.getTemplate2 = function() {
-    return $.get("./templates/2.html")
+    return $.get("./templates/rightside.html")
 };
 
 GithubClient.prototype.getAllData = function(){

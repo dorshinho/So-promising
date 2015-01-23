@@ -15,10 +15,16 @@ function app() {
             url: "./bower_components/jquery/dist/jquery.min.js"
         }, {
             url: "./bower_components/lodash/dist/lodash.min.js"
-        }
+        },
+        {
+            url: "./js/github.js"
+        },
         // {url: "./bower_components/backbone/backbone.js"}
     ).then(function() {
         document.querySelector("html").style.opacity = 1;
+
+
+
         var token = "7c0555e739ceb57d4a4d07840111c9d533343f86"
 
         var githubUsername = "dorshinho";

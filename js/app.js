@@ -45,9 +45,7 @@ function app() {
         $.when(promise3 , promise4).then( drawProfile2 )
 
         function drawProfile2() {
-            // alert()
             var template = arguments[0]
-             // alert(JSON.stringify(promise4))
             var data = arguments[1]
             console.log(data);
 
